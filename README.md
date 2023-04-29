@@ -1,6 +1,6 @@
 # Script Formatação
 
-O script fortamação é para ser utilizado após formatar seu computadar, com ele você irá instalar no Windows: Discord, Steam, Firefox, Voicemeeter, Nvidia Geforce, VLC e bitTorrent enquanto no linux não terá o Voicemeeter e o Nvidia Geforce
+O script fortamação é para ser utilizado após formatar seu computador, com ele você irá instalar no Windows: Discord, Steam, Firefox, Voicemeeter, Nvidia Geforce, VLC e bitTorrent enquanto no linux não terá o Voicemeeter e o Nvidia Geforce
 
 
 ## 🚀 Começando
