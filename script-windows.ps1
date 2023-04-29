@@ -68,4 +68,17 @@ Remove-Item $NvidiaInstaller
 # Baixa e instala o VLC
 Write-Host "Baixando e instalando o VLC..."
 $VlcInstaller = "$TempFolder\vlc-setup.exe"
-Invoke-WebRequest $VlcUrl -OutFile $V
+Invoke-WebRequest $VlcUrl -OutFile $VlcInstaller
+Start-Process -FilePath $VlcInstaller -ArgumentList "/S" -Wait
+Remove-Item $VlcInstaller
+
+# Baixa e instala o BitTorrent
+Write-Host "Baixando e instalando o BitTorrent..."
+$BitTorrentInstaller = "$TempFolder\bittorrent-setup.exe"
+Invoke-WebRequest $BitTorrentUrl -OutFile $BitTorrentInstaller
+Start-Process -FilePath $BitTorrentInstaller -ArgumentList "/S" -Wait
+Remove-Item $BitTorrentInstaller
+
+# Limpa a pasta temporária
+Remove-Item $TempFolder -Recurse -Force
+Write-Host "Instalação concluída!"
